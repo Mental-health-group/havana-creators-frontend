@@ -3,10 +3,12 @@ import { Link } from "react-scroll";
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
+import Login from "../models/Login";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(false);
 
   const handleChange = () => {
     setMenu(!menu);
@@ -23,6 +25,16 @@ const Navbar = () => {
 
   const closeForm = () => {
     setShowForm(false);
+  };
+
+  const openLoginForm = () => {
+    setShowForm(false); // Close contact form
+    setShowLoginForm(true); // Open login form
+    setMenu(false); // Close mobile menu if open
+  };
+
+  const closeLoginForm = () => {
+    setShowLoginForm(false);
   };
 
   return (
@@ -84,16 +96,27 @@ const Navbar = () => {
           </nav>
 
           <div className=" hidden lg:flex">
+            {/* Contact Us Button */}
             <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out mr-4"
               onClick={openForm}
             >
               Contact Us
             </button>
+            {/* Login Button */}
+            <button
+              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              onClick={openLoginForm}
+            >
+              Login
+            </button>
           </div>
 
           {showForm && <Contact closeForm={closeForm} />}
+          {/* Render Login component if showLoginForm is true */}
+          {showLoginForm && <Login closeForm={closeLoginForm} />}
 
+          {/* Mobile menu icon */}
           <div className=" lg:hidden flex items-center">
             {menu ? (
               <AiOutlineClose size={28} onClick={handleChange} />
