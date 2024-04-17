@@ -9,6 +9,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showSignupForm, setShowSignupForm] = useState(false);
 
   const handleChange = () => {
     setMenu(!menu);
@@ -104,12 +105,20 @@ const Navbar = () => {
               Contact Us
             </button>
             {/* Login Button */}
-            <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
-              onClick={openLoginForm}
-            >
-              Login
-            </button>
+            <div>
+              <button
+                className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out mr-2"
+                onClick={openLoginForm}
+              >
+                Register
+              </button>
+              <button
+                className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+                onClick={openLoginForm}
+              >
+                Login
+              </button>
+            </div>
           </div>
 
           {showForm && <Contact closeForm={closeForm} />}

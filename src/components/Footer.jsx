@@ -6,11 +6,12 @@ const Footer = () => {
     <div className=" bg-backgroundColor text-white rounded-t-3xl mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">WellnessVista</h1>
+          <h1 className=" font-semibold text-xl pb-4">Havana</h1>
           <p className=" text-sm">
-            Our team of dedicated doctors, each specializing in unique fields
-            such as orthopedics, cardiology, pediatrics, neurology, dermatology,
-            and more.
+            Havana offers a comprehensive mental health support platform,
+            curated by a team of dedicated professionals. With Havana, you're
+            never alone in navigating life's challenges our diverse team is here
+            to provide personalized guidance and support every step of the way
           </p>
         </div>
         <div>
@@ -55,7 +56,7 @@ const Footer = () => {
               duration={500}
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Lab Test
+              Individual Counselling Sessions
             </Link>
             <Link
               to="services"
@@ -64,7 +65,7 @@ const Footer = () => {
               duration={500}
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Health Check
+              Group Therapy Sessions
             </Link>
             <Link
               to="services"
@@ -73,7 +74,7 @@ const Footer = () => {
               duration={500}
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Heart Health
+              Online Worskshops and Webinars
             </Link>
           </nav>
         </div>
@@ -81,13 +82,13 @@ const Footer = () => {
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
           <nav className=" flex flex-col gap-2">
             <Link to="/" spy={true} smooth={true} duration={500}>
-              123 Elm Street, Suite 456 Springfield, IL 62701 United States
+              23, Aderenle Street, Ikeja
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
               support@care.com
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
-              +123-456-7890
+              +2347066634401
             </Link>
           </nav>
         </div>
@@ -95,7 +96,7 @@ const Footer = () => {
       <div>
         <p className=" text-center py-4">
           @copyright developed by
-          <span className=" text-hoverColor"> champion programmers</span> | All
+          <span className=" text-hoverColor"> Havana Programmers</span> | All
           rights reserved
         </p>
       </div>

@@ -9,22 +9,22 @@ const Doctors = () => {
   const data = [
     {
       img: "/src/assets/img/doc1.jpg",
-      name: "Dr. Serena Mitchell",
+      name: "Dr. Kehinde Olaleye",
       specialties: "Orthopedic Surgeon",
     },
     {
-      img: "/src/assets/img/doc2.jpg",
-      name: "Dr. Julian Bennett",
+      img: "/src/assets/img/doc2.jpeg",
+      name: "Dr. Julian Akpo",
       specialties: "Cardiologist",
     },
     {
-      img: "/src/assets/img/doc3.jpg",
-      name: "Dr. Camila Rodriguez",
+      img: "/src/assets/img/doc4.webp",
+      name: "Dr. Anu Abdulahi",
       specialties: "Pediatrician",
     },
     {
-      img: "/src/assets/img/doc4.jpg",
-      name: "Dr. Victor Nguyen",
+      img: "/src/assets/img/doc7.png",
+      name: "Dr. Victory Nguyen",
       specialties: "Neurologist",
     },
     {
@@ -33,7 +33,7 @@ const Doctors = () => {
       specialties: "Dermatologist",
     },
     {
-      img: "/src/assets/img/doc6.jpg",
+      img: "/src/assets/img/doc6.avif",
       name: "Dr. Olivia Martinez",
       specialties: "Ophthalmologist",
     },
@@ -85,10 +85,7 @@ const Doctors = () => {
           <h1 className=" text-4xl font-semibold text-center lg:text-start">
             Our Doctors
           </h1>
-          <p className=" mt-2 text-center lg:text-start">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-            quidem.
-          </p>
+          <p className=" mt-2 text-center lg:text-start"></p>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
           <button
