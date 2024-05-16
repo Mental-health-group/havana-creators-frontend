@@ -4,6 +4,7 @@ import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
 import Login from "../models/Login";
+import Signup from "../models/Register";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -95,30 +96,27 @@ const Navbar = () => {
               Blog
             </Link>
           </nav>
-
-          <div className=" hidden lg:flex">
+          {/* hidden lg:flex */}
+          <div className="flex flex-row ">
             {/* Contact Us Button */}
-            <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out mr-4"
-              onClick={openForm}
-            >
-              Contact Us
-            </button>
+            
             {/* Login Button */}
-            <div>
-              <button
+            {/* <div> */}
+              {/* <button
                 className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out mr-2"
                 onClick={openLoginForm}
               >
                 Register
-              </button>
-              <button
-                className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              </button> */}
+               <button
+                className="bg-brightColor text-white px-4 py-2 rounded-md text-xl  transition duration-300 ease-in-out"
                 onClick={openLoginForm}
               >
                 Login
               </button>
-            </div>
+              <Signup />
+             
+            {/* </div> */}
           </div>
 
           {showForm && <Contact closeForm={closeForm} />}
